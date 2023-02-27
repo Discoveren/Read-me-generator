@@ -35,9 +35,30 @@ const questions = [
     name:'license',
     message: 'What License should this project fall under?',
     choices: ['Harvard', 'MIT', 'ISC']
-},    
+},   
+{
+    type: 'input',
+    name:'contributing',
+    message: 'Please enter instructions for those who wish to contribute to your project'
+},
+{
+    type: 'input',
+    name:'tests',
+    message: 'Please enter test instructions for this project'
+},
+{
+    type: 'input',
+    name:'questions',
+    message: ['Please enter your email address for others to contact you if they have queries']
+},
+{
+    type: 'input',
+    name:'questions',
+    message: ['Please enter your Github username']
+},
 
-];
+]; 
+
 
 // function to write README file
 function writeToFile(fileName, data) {
